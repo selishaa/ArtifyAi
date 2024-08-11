@@ -12,7 +12,7 @@ export const increaseApiLimit = async (req: Request) => {
         where: {
             userId
         }
-    });
+    }); 
 
     if(userApiLimit){
         await prismadb.userApiLimit.update({
