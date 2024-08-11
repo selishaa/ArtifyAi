@@ -1,0 +1,98 @@
+Installed Clerk
+followed Documentation
+
+this is necessary along with the secret for clerk
+ NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/dashboard
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/dashboard
+
+whenever you create a form
+
+use 1. zod
+2. use constant.ts with formschema
+3. use zodResolver, useForm
+const form = useForm<z.infer<typeof formSchema>>({
+        resolver: zodResolver(formSchema),
+        defaultValues: {
+            prompt: ""
+        }
+    });
+
+focus-visible:ring-0
+focus-visible:ring-transparent
+
+bg-[#111827]
+md:inset-y-0 -> top0, bottom0
+
+grid-cols-12 --> parent
+col-span-12 md:col-span-10 -->child 1
+col-span-12 md:col-span-2 -->child 2 
+This collapses when screen is smaller than medium
+
+
+use api folder make route.ts for doing REST api
+install axios and use it to interact with route.ts
+
+tinywow.com
+123apps.com
+https://www.commontools.org/
+
+
+Don't know much about reactmarkdown
+
+leading7 -> line height 7
+
+Error: Invalid src prop (https://oaidalleapiprodscus.blob.core.windows.net/private/org-WsUbW4wKSXJhwQmCenW3nemZ/user-jIAnUaOMBMh4qEilA9xKWkLF/img-QBTvbD2dIeyQHRM0bgBCkmfG.png?st=2024-06-27T02%3A28%3A52Z&se=2024-06-27T04%3A28%3A52Z&sp=r&sv=2023-11-03&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-06-27T01%3A34%3A33Z&ske=2024-06-28T01%3A34%3A33Z&sks=b&skv=2023-11-03&sig=f1rnEy4KXtHPbT%2B8olEV6KMfddUJs2g30LHj3K4LFD8%3D) on `next/image`, hostname "oaidalleapiprodscus.blob.core.windows.net" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+
+
+to install prisma
+
+npm i -D prisma
+npm prisma init
+
+
+Install Prisma CLI: npm i @prisma/client
+create a new file prismadb.ts in Lib
+
+To see the table: npx prisma studio
+
+Get the data in server components and pass it as the props. use router.refresh to refresh the server components.
+
+# To create a modal
+Install zustand to create a model
+install dialog npx shadcn-ui@latest add dialog
+custom hook was created in use-pro-modal
+
+#Connection with stripe
+npm i stripe
+create stripe.ts in lib folder
+
+in stripe route, we are either creating a subscription or either canceling or upgrade
+
+In order for webhook to work 
+1. Download the stripe cli through brew for mac
+2. stripe login and it authenticates with the browser
+3. Then setup by doing this stripe --> listen --forward-to localhost:3000/api/webhook
+and then copy your secret key starting whsec_....
+
+Activate Customer portal link from the website.
+
+Delete the database: npx prisma migrate reset
+after doing it we should do: npx prisma generate and npx prisma db push
+
+
+
+Add crisp 
+npm i crisp-sdk-web
+create new file inside components crisp-chat.tsx
+
+Clerk supports both client components and server components that's why we can use it in both client and server
+we use useAuth hook in client and just auth in server. 
+
+
+To install the typewritter components.
+npm i typewriter-effect 
+and import it 
